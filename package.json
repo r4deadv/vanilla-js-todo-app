@@ -1,0 +1,20 @@
+{
+  "name": "vanilla-js-todo-app",
+  "version": "1.0.0",
+  "description": "TODO app using vanilla JavaScript",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/r4deadv/vanilla-js-todo-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/r4deadv/vanilla-js-todo-app/issues"
+  },
+  "homepage": "https://github.com/r4deadv/vanilla-js-todo-app#readme"
+}
