@@ -202,3 +202,34 @@ function getTodosFromLS() {
     });
   });
 }
+
+// === IN PROGRESS ===
+
+function saveTodoToLS() {
+  let todos;
+
+  if (localStorage.getItem("todos") === "null") {
+    todos = [];
+  } else {
+    todos = JSON.parse(localStorage.getItem("todos"));
+  }
+  todos.push(todoInput.value);
+  localStorage.setItem("todos", JSON.stringify(todos));
+}
+
+function deleteFromLS() {
+  let todos;
+  todos =
+    localStorage.getItem("todos") === null
+      ? []
+      : JSON.parse(localStorage.getItem("todos"));
+  // todos
+}
+
+function updateTodoInLS() {
+  let todos;
+  todos =
+    localStorage.getItem("todos") === null
+      ? []
+      : JSON.parse(localStorage.getItem("todos"));
+}
