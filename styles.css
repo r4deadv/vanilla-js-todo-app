@@ -125,3 +125,79 @@ body {
   cursor: pointer;
   filter: brightness(0.7);
 }
+
+.button--todo {
+  color: #ddd;
+  background-color: inherit;
+  border: 1px solid #ddd;
+  transition: 0.3s;
+}
+
+.button--save {
+  background-color: rgb(33, 136, 56);
+  border: 1px solid rgb(33, 136, 56);
+}
+
+.button--delete:hover {
+  background-color: rgb(154, 27, 39);
+  border: 1px solid rgb(154, 27, 39);
+}
+
+.todo-collection {
+  padding-left: 0;
+}
+
+.todo-collection__item {
+  list-style-type: none;
+  margin: 0;
+  padding: 1rem 0;
+  border-top: 0.1rem solid rgba(255, 255, 255, 0.6);
+  font-size: 1.1rem;
+  display: grid;
+  grid-row-gap: 1rem;
+  grid-template-columns: 1fr auto auto;
+}
+
+.todo-collection__item__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 0.5rem;
+  overflow-x: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+.shake-horizontal {
+  animation: shake 0.25s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1rem, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate(-1rem, 0) rotate(0deg);
+  }
+  1000% {
+    transform: translate(1rem, 0) rotate(0deg);
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .wrapper {
+    width: 75%;
+  }
+  .todo-collection__item__title {
+    overflow-x: auto;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .wrapper {
+    width: 90%;
+  }
+}
