@@ -44,7 +44,7 @@ function addTodo(e) {
     todoTitle.classList.add("todo-collection__item__title");
     todoTitle.innerText = todoInput.value;
     todoTitle.style.color =
-      todoInput.value.length % 2 === 0 ? "orange" : "navy";
+      todoInput.value.length % 2 === 0 ? "orange" : "green";
 
     editableInput.classList.add("input");
     editableInput.classList.add("input--todo");
@@ -98,7 +98,7 @@ function addTodo(e) {
 
       if (!alreadyExist) {
         todoTitle.style.color =
-          editableInput.value.length % 2 === 0 ? "orange" : "navy";
+          editableInput.value.length % 2 === 0 ? "orange" : "green";
         todoTitle.innerText = editableInput.value; // this is the change
         toggleTodoEditForm(); // we want to keep the edit mode state
       } else {
